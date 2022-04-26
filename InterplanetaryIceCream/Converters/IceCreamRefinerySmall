@@ -44,8 +44,8 @@ tags = conver isru mine )mining (ore process resource
 	{
 		 name = ModuleResourceConverter
 		 ConverterName = Lf+Ox
-		 StartActionName = Start ISRU [Lf+Ox]
-		 StopActionName = Stop ISRU [Lf+Ox]	 
+		 StartActionName = Start ISRU [IceCream]
+		 StopActionName = Stop ISRU [IceCream]	 
 		AutoShutdown = true
 		TemperatureModifier
 		{
@@ -79,7 +79,7 @@ tags = conver isru mine )mining (ore process resource
 		 
 		 INPUT_RESOURCE
 		 {
-			ResourceName = Ore
+			ResourceName = UnrefinedIceCream
 			Ratio = 2.5
 			FlowMode = STAGE_PRIORITY_FLOW
   		 }
@@ -90,18 +90,12 @@ tags = conver isru mine )mining (ore process resource
 		 }
 		 OUTPUT_RESOURCE
 		 {
-			ResourceName = LiquidFuel
+			ResourceName = RefinedIceCream
 			Ratio = 0.225
 			DumpExcess = false
 			FlowMode = STAGE_PRIORITY_FLOW
 		 }
-		 OUTPUT_RESOURCE
-		 {
-			ResourceName = Oxidizer
-			Ratio = 0.275
-			DumpExcess = false
-			FlowMode = STAGE_PRIORITY_FLOW
-		 }
+		 
 	}
 
 		MODULE
