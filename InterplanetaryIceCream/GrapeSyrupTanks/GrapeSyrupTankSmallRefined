@@ -15,7 +15,7 @@ PART
 	subcategory = 0
 	title = JU-T50 Grape Syrup Tank
 	manufacturer = Akagi Aerospace Industries in collaboration with Nebula Space Inc.
-	description = The JU-T50 Grape Syrup Tank is designed for carrying Eve's plentiful supply of grape syrup back to Kerbin. Handle with caution, and beware of syrup spills.
+	description = The JU-T50 Grape Syrup Tank is designed for carrying Eve's plentiful supply of grape syrup back to Kerbin, or anywhere else you want to go. Handle with caution, and beware of syrup spills.
 	attachRules = 1,1,1,1,0
 	mass = 0.0625
 	dragModelType = default
