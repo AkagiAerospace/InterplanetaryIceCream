@@ -8,7 +8,7 @@ PART
 	node_stack_top = 0.0, 0.1742737, 0.0, 0.0, 1.0, 0.0, 0
 	node_stack_bottom = 0.0, -0.1742737, 0.0, 0.0, -1.0, 0.0, 0
 	node_attach = 0.3175, 0.0, 0.0, 1.0, 0.0, 0.0
-	TechRequired = propulsionSystems
+	TechRequired = iceCreamPropulsionSystems
 	entryCost = 4200
 	cost = 70
 	category = FuelTank
@@ -29,14 +29,8 @@ PART
 	bulkheadProfiles = size0, srf
 	RESOURCE
 	{
-		name = LiquidFuel
-		amount = 18
-		maxAmount = 18
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 22
-		maxAmount = 22
+		name = IceCream
+		amount = 0
+		maxAmount = 50
 	}
 }
