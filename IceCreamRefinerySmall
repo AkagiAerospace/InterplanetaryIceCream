@@ -1,0 +1,124 @@
+PART
+{
+name = MiniIceCreamSRU
+module = Part
+author = Akagi
+
+
+MODEL
+{
+	model = Squad/Parts/Resources/MiniISRU/MiniISRU
+	scale = 1.25,1.25,1.25
+}
+rescaleFactor = 1
+
+node_stack_top = 0.0, .9, 0.0, 0.0, 1.0, 0.0, 1
+node_stack_bottom = 0.0, -.9, 0.0, 0.0, -1.0, 0.0, 1
+
+TechRequired = advScienceTech
+entryCost = 4000
+cost = 1000
+category = Utility
+subcategory = 0
+title = ICE-FM Ice Cream Engine – Fuel Mini
+manufacturer = Akagi Aerospace Industries in collaboration with Nebula Space Inc.
+description = This modified Convert-O-Tron 125 was 
+attachRules = 1,0,1,1,0
+
+// --- standard part parameters ---
+mass = 1.25
+dragModelType = default
+maximum_drag = 0.2
+minimum_drag = 0.2
+angularDrag = 2
+crashTolerance = 7
+maxTemp = 2000 // = 3500
+bulkheadProfiles = size1
+tags = conver isru mine )mining (ore process resource
+	MODULE
+	{
+		name = ModuleOverheatDisplay
+	}
+
+	MODULE
+	{
+		 name = ModuleResourceConverter
+		 ConverterName = Lf+Ox
+		 StartActionName = Start ISRU [Lf+Ox]
+		 StopActionName = Stop ISRU [Lf+Ox]	 
+		AutoShutdown = true
+		TemperatureModifier
+		{
+			key = 0 50000
+			key = 750 25000
+			key = 1000 5000
+			key = 1250 2500	
+			key = 2000 2500	
+			key = 4000 0
+		}				
+		GeneratesHeat = true
+		DefaultShutoffTemp = .8
+		ThermalEfficiency 
+		{
+			key = 0 0 0 0
+			key = 500 0.9 0 0
+			key = 1000 1.0 0 0
+			key = 1250 0.9 0 0
+			key = 1500 0.5 0 0
+			key = 3000 0.0 0 0 
+		}
+
+
+
+		UseSpecialistBonus = true
+		SpecialistEfficiencyFactor = 0.2
+		SpecialistBonusBase = 0.05
+		ExperienceEffect = ConverterSkill
+		EfficiencyBonus = 1
+
+		 
+		 INPUT_RESOURCE
+		 {
+			ResourceName = Ore
+			Ratio = 2.5
+			FlowMode = STAGE_PRIORITY_FLOW
+  		 }
+		 INPUT_RESOURCE
+		 {
+			ResourceName = ElectricCharge
+			Ratio = 30
+		 }
+		 OUTPUT_RESOURCE
+		 {
+			ResourceName = LiquidFuel
+			Ratio = 0.225
+			DumpExcess = false
+			FlowMode = STAGE_PRIORITY_FLOW
+		 }
+		 OUTPUT_RESOURCE
+		 {
+			ResourceName = Oxidizer
+			Ratio = 0.275
+			DumpExcess = false
+			FlowMode = STAGE_PRIORITY_FLOW
+		 }
+	}
+
+		MODULE
+	{
+		name = ModuleCoreHeat
+		CoreTempGoal = 1000					
+		CoreToPartRatio = 0.1				
+		CoreTempGoalAdjustment = 0			
+		CoreEnergyMultiplier = 0.1			
+		HeatRadiantMultiplier = 0.25		
+		CoolingRadiantMultiplier = 0		
+		HeatTransferMultiplier = 0			
+		CoolantTransferMultiplier = 0.10	
+		radiatorCoolingFactor = .5			
+		radiatorHeatingFactor = 0.01		
+		MaxCalculationWarp = 1000			
+		CoreShutdownTemp = 1000				
+		MaxCoolant = 25			
+	}
+}
