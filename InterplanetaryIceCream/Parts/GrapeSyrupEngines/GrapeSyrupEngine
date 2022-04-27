@@ -1,8 +1,8 @@
 PART
 {
-	name = liquidEngineMini_v2
+	name = juiceEngineMini
 	module = Part
-	author = RoverDude
+	author = Akagi
 	MODEL
 	{
 		model = Squad/Parts/Engine/liquidEngine48-7S_v2/SparkV2
@@ -17,7 +17,7 @@ PART
 	cost = 240
 	category = Engine
 	subcategory = 0
-	title = 49-7S "Lightning" Grape Syrup Engins
+	title = 49-7S "Lightning" Grape Syrup Engine
 	manufacturer = NaGi Space Enterprises
 	description = 
 	attachRules = 1,0,1,0,0
