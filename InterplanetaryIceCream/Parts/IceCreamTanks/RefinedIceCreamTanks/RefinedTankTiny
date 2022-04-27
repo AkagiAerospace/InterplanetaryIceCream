@@ -3,7 +3,7 @@ PART
 	name = miniFuelTank
 	module = Part
 	author = Akagi
-	mesh = Squad/Parts/FuelTank/
+	mesh = Squad/Parts/FuelTank/ //finish finding Oscar-B model
 	rescaleFactor = 1
 	node_stack_top = 0.0, 0.1742737, 0.0, 0.0, 1.0, 0.0, 0
 	node_stack_bottom = 0.0, -0.1742737, 0.0, 0.0, -1.0, 0.0, 0
