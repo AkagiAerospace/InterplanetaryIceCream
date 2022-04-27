@@ -21,7 +21,7 @@ cost = 1000
 category = Utility
 subcategory = 0
 title = ICE-FM Ice Cream Engine – Fuel Mini
-manufacturer = Akagi Aerospace Industries in collaboration with Nebula Space Inc.
+manufacturer = NaGi Space Enterprises
 description = This modified Convert-O-Tron 125 was made to make unrefined ice cream into fuel for ice cream engines, as well as for snacking purposes.
 attachRules = 1,0,1,1,0
 
