@@ -17,9 +17,9 @@ PART
 	cost = 240
 	category = Engine
 	subcategory = 0
-	title = #autoLOC_500421 //#autoLOC_500421 = 48-7S "Spark" Liquid Fuel Engine
-	manufacturer = #autoLOC_501637 //#autoLOC_501637 = Rockomax Conglomerate
-	description = #autoLOC_500422 //#autoLOC_500422 = The 48-7S may be small, but it packs quite a punch for its size. This little engine is a testament to how larger does not always mean more advanced, at least according to Rockomax's marketing department. The box it comes in is pretty cool, in any case.
+	title = 49-7S "Lightning" Grape Syrup Engins
+	manufacturer = NaGi Space Enterprises
+	description = 
 	attachRules = 1,0,1,0,0
 	mass = 0.13
 	heatConductivity = 0.06 // half default
