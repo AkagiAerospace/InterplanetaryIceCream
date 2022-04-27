@@ -3,7 +3,7 @@ PART
 	name = miniFuelTank
 	module = Part
 	author = Akagi
-	mesh = model.mu
+	mesh = Squad/Parts/FuelTank/
 	rescaleFactor = 1
 	node_stack_top = 0.0, 0.1742737, 0.0, 0.0, 1.0, 0.0, 0
 	node_stack_bottom = 0.0, -0.1742737, 0.0, 0.0, -1.0, 0.0, 0
@@ -14,7 +14,7 @@ PART
 	category = FuelTank
 	subcategory = 0
 	title = Oscar-C Ice Cream Tank
-	manufacturer = Akagi Aerospace Industries in collaboration with Nebula Space Inc.
+	manufacturer = NaGi Space Enterprises
 	description = The Oscar-C from Akagi Aerospace Industries and Nebula Space Inc. is a compact ice cream container. Do not use as snack bowl.
 	attachRules = 1,1,1,1,0
 	mass = 0.025
