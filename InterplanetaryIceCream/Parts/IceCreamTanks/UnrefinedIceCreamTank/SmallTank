@@ -18,7 +18,7 @@ cost = 1000
 category = iceCreamPropulsionSystems
 subcategory = 0
 title = Small Ice Cream Holding Tank
-manufacturer = Akagi Aerospace Industries in collaboration with Nebula Space Inc.
+manufacturer = NaGi Space Enterprises
 description = A small tank for storing raw Ice Cream. Note: Do not use as bath
 attachRules = 1,1,1,1,0
 
