@@ -46,9 +46,9 @@ tags = conver isru process resource
 		TemperatureModifier
 		{
 			key = 0 100000
-			key = 750 50000
-			key = 1000 10000
-			key = 1250 500	
+			key = 1000 50000
+			key = 1500 10000
+			key = 1750 500	
 			key = 2000 50	
 			key = 4000 0
 		}				
@@ -104,9 +104,9 @@ tags = conver isru process resource
 		TemperatureModifier
 		{
 			key = 0 100000
-			key = 750 50000
-			key = 1000 10000
-			key = 1250 500	
+			key = 1100 50000
+			key = 1600 10000
+			key = 1850 500	
 			key = 2000 50	
 			key = 4000 0
 		}				
@@ -115,7 +115,7 @@ tags = conver isru process resource
 		ThermalEfficiency 
 		{
 			key = 0 0 0 0
-			key = 1000 0.1 0 0
+			key = 500 0.1 0 0
 			key = 1600 1.0 0 0
 			key = 1900 0.1 0 0
 			key = 3000 0 0 0 
@@ -160,9 +160,9 @@ tags = conver isru process resource
 		TemperatureModifier
 		{
 			key = 0 100000
-			key = 750 50000
-			key = 1000 10000
-			key = 1250 500	
+			key = 1000 50000
+			key = 1500 10000
+			key = 1750 500	
 			key = 2000 50	
 			key = 4000 0
 		}				
