@@ -1,1 +1,186 @@
-
+PART
+{
+	name = mintmusEngine1
+	module = Part
+	author = NAGI
+	mesh = <???>
+	scale = 1
+	rescaleFactor = 1
+	node_stack_top = 0.0, <???>, 0.0, 0.0, 1.0, 0.0, 0
+	node_stack_bottom = 0.0, <???>, 0.0, 0.0, -1.0, 0.0, 0
+	TechRequired = <???>
+	entryCost = 33600
+	cost = 16000
+	category = Engine
+	subcategory = 0
+	title = IC-VI "Elktar" Mintmus Ice Cream Propulsor
+	manufacturer = NAGI
+	description = By emitting Mintmus Ice Cream through a small thruster port, the Elktar can produce incredibly efficient propulsion, but with a downside of very low thrust and high energy usage. According to ISP Electronics sales reps, the rumours of this engine being powered by "dark magic" are largely exaggerated.
+	attachRules = 1,0,1,1,0
+	mass = 0.2
+	dragModelType = default
+	maximum_drag = 0.15
+	minimum_drag = 0.15
+	angularDrag = 1.8
+	crashTolerance = 9
+	maxTemp = 2000
+	bulkheadProfiles = size0
+	tags = IC
+	MODULE
+	{
+		name = ModuleEnginesFX
+		engineID = MintmusIC1
+		thrustVectorTransformName = thrustTransform
+		exhaustDamage = False
+		ignitionThreshold = 0.1
+		minThrust = 0
+		maxThrust = 3
+		heatProduction = 0
+		powerEffectName = IonPlume
+		EngineType = Electric
+		PROPELLANT
+		{
+			name = ElectricCharge
+			ratio = 1.15
+			DrawGauge = True
+			minResToLeave = 1.0
+		}
+		PROPELLANT
+		{
+			name = MintmusIceCream
+			ratio = 1
+			DrawGauge = True
+		}
+		atmosphereCurve
+		{
+			key = 0 4200
+			key = 1 1000
+			key = 1.2 0.01
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		animationName = colorAnimation
+		dependOnEngineState = True
+		responseSpeed = 0.5
+		engineName = MintmusIC1
+		dependOnThrottle = True
+	}
+	EFFECTS
+	{		
+		IonPlume
+		{
+			AUDIO
+			{
+				channel = Ship
+				clip = sound_IonEngine
+				volume = 0.0 0.0
+				volume = 0.05 0.20
+				volume = 1.0 0.25
+				pitch = 0.0 0.2
+				pitch = 1.0 0.8
+				loop = true
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				modelName = Squad/FX/IonPlume
+				transformName = thrustTransform
+				emission = 0.0 0.0
+				emission = 0.25 0.5			
+				emission = 1.0 1.0
+				//speed = 0.0 0.0
+				//speed = 1.0 1.0
+				localPosition = 0, 0, 0.12
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		useStaging = True
+		useEvent = True
+		situationMask = 112
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = ALWAYS
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = BODYANDSITUATION
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = ONCEPERPART
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 4000
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 8000
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 2000
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 4000
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 1000
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 2000
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDE
+			test = LT
+			value = 300000
+			situationMask = 16
+			body = _NotSun
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDE
+			test = LT
+			value = 600000
+			situationMask = 32
+			body = _NotSun
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		packedVolume = 130
+	}
+}
