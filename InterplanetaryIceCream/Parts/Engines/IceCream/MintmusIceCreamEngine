@@ -3,7 +3,10 @@ PART
 	name = mintmusEngine1
 	module = Part
 	author = NAGI
-	mesh = <???>
+	    MODEL
+    {
+        model = Squad/Parts/Engine/ionEngine/model
+    }
 	scale = 1
 	rescaleFactor = 1
 	node_stack_top = 0.0, <???>, 0.0, 0.0, 1.0, 0.0, 0
