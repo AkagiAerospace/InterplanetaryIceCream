@@ -1,0 +1,149 @@
+PART
+{
+	name = ICrawFuelTank01
+	module = Part
+	author = NAGI
+	MODEL
+	{
+		model = <???>
+	}
+	rescaleFactor = 1.0
+
+	node_stack_top = 0.0, <???>, 0.0, 0.0, 1.0, 0.0, 0
+	node_stack_bottom = 0.0, <???>, 0.0, 0.0, -1.0, 0.0, 0
+	node_attach = <diameter/2>, 0.0, 0.0, 1.0, 0.0, 0.0, 1
+	TechRequired = <???>
+	entryCost = 14150
+	cost = 890
+	category = FuelTank
+	subcategory = 0
+	title = Raw Ice Cream Holding Tank
+	manufacturer = NAGI
+	description = <???>
+	attachRules = 1,1,1,1,0
+	mass = 0.02462
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.15
+	angularDrag = 2
+	crashTolerance = 9.2
+	maxTemp = 2000 // = 2900
+	breakingForce = 40
+	breakingTorque = 40
+	bulkheadProfiles = size0, srf
+	tags = fueltank rawIceCream propellant rocket
+	MODULE
+	{
+		name = ModulePartVariants
+		primaryColor = #000000
+		secondaryColor = #000000
+		baseDisplayName = Empty
+		baseThemeName = Empty
+		useMultipleDragCubes = false
+		VARIANT
+		{
+			name = RawMintmus
+			displayName = Raw Mintmus Ice Cream
+			themeName = RawMintmusIceCream
+			primaryColor = #ffffff
+			secondaryColor = #000000
+			//TEXTURE
+			//{
+			//	mainTextureURL = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_BW
+			//	_BumpMap = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_N
+			//	shader = KSP/Bumped Specular			
+			//}
+			RESOURCE
+			{
+			name = RawMintmusIceCream
+			amount = 0
+			maxAmount = 270
+			}
+		}
+		VARIANT
+		{
+			name = RawBopolate
+			displayName = RawBopolate Ice Cream
+			themeName = RawBopolateIceCream
+			primaryColor = #ffffff
+			secondaryColor = #000000
+			//TEXTURE
+			//{
+			//	mainTextureURL = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_BW
+			//	_BumpMap = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_N
+			//	shader = KSP/Bumped Specular			
+			//}
+			RESOURCE
+			{
+			name = RawBopolateIceCream
+			amount = 0
+			maxAmount = 270
+			}
+		}
+		VARIANT
+		{
+			name = RawPolemon
+			displayName = RawPolemon Ice Cream
+			themeName = RawPolemonIceCream
+			primaryColor = #ffffff
+			secondaryColor = #000000
+			//TEXTURE
+			//{
+			//	mainTextureURL = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_BW
+			//	_BumpMap = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_N
+			//	shader = KSP/Bumped Specular			
+			//}
+			RESOURCE
+			{
+			name = RawPolemonIceCream
+			amount = 0
+			maxAmount = 270
+			}
+		}
+		VARIANT
+		{
+			name = RawEeloo
+			displayName = RawEeloo Ice Cream
+			themeName = RawEelooIceCream
+			primaryColor = #ffffff
+			secondaryColor = #000000
+			//TEXTURE
+			//{
+			//	mainTextureURL = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_BW
+			//	_BumpMap = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_N
+			//	shader = KSP/Bumped Specular			
+			//}
+			RESOURCE
+			{
+			name = RawEelooIceCream
+			amount = 0
+			maxAmount = 270
+			}
+		}
+		VARIANT
+		{
+			name = RawPistachiool
+			displayName = RawPistachiool Ice Cream
+			themeName = RawPistachioolIceCream
+			primaryColor = #ffffff
+			secondaryColor = #000000
+			//TEXTURE
+			//{
+			//	mainTextureURL = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_BW
+			//	_BumpMap = Squad/Parts/FuelTank/Size1_Tanks/125Tanks_N
+			//	shader = KSP/Bumped Specular			
+			//}
+			RESOURCE
+			{
+			name = RawPistachioolIceCream
+			amount = 0
+			maxAmount = 270
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		packedVolume = 161.8
+	}
+}
