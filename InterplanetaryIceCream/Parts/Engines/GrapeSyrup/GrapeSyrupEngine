@@ -18,8 +18,8 @@ PART
 	category = Engine
 	subcategory = 0
 	title = 49-7S "Lightning" Grape Syrup Engine
-	manufacturer = NaGi Space Enterprises
-	description = 
+	manufacturer = NAGI
+	description = An engine that runs on grape syrup from Eve.
 	attachRules = 1,0,1,0,0
 	mass = 0.13
 	heatConductivity = 0.06 // half default
