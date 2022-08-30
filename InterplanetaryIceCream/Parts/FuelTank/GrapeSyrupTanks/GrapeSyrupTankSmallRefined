@@ -14,7 +14,7 @@ PART
 	category = FuelTank
 	subcategory = 0
 	title = JU-T50 Grape Syrup Tank
-	manufacturer = NaGi Space Enterprises
+	manufacturer = NAGI
 	description = The JU-T50 Grape Syrup Tank is designed for carrying Eve's plentiful supply of grape syrup back to Kerbin, or anywhere else you want to go. Handle with caution, and beware of syrup spills.
 	attachRules = 1,1,1,1,0
 	mass = 0.0625
