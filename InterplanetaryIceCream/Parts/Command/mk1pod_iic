@@ -20,7 +20,7 @@ entryCost = 0
 cost = 600
 category = Pods
 subcategory = 0
-title = Mk1 Command Pod
+title = Mk1.5 Command Pod
 manufacturer = NAGI
 description = This new version of the Mk1 command pod features a small amount of fuel in exchange for the loss of some battery capacity. Perfect for aborting!
 
