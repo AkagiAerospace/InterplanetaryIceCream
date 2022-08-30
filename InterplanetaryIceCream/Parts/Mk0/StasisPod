@@ -1,0 +1,60 @@
+PART
+{
+	name = stasisPod
+	module = Part
+	author = Akagi
+  MODEL
+	{
+		model = Squad/Parts/FuelTank/FoilTanks/RadialTank_Capsule
+	}
+	rescaleFactor = 1.0
+	node_attach = 0.3, 0.0, 0.0, 1.0, 0.0, 0.0, 0
+	TechRequired = spaceExploration
+	entryCost = 1500
+	cost = 50
+	category = Pods
+	subcategory = 0
+	title = KS-1 Stasis Pod
+	manufacturer = NAGI
+	description = A small pod developed from a fuel tank.
+	attachRules = 0,1,0,1,0
+	mass = 0.03375
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.3
+	angularDrag = 2
+	crashTolerance = 5
+	breakingForce = 50
+	breakingTorque = 50
+	maxTemp = 2000 // = 3000
+	fuelCrossFeed = True
+	bulkheadProfiles = srf
+	tags = cabin stasis pod kerbal crew
+  
+  MODULE
+{
+	name = ModuleCommand
+	minimumCrew = 1	
+}
+	MODULE
+{
+	name = ModuleReactionWheel
+	
+	PitchTorque = 5
+	YawTorque = 5
+	RollTorque = 5
+	
+	RESOURCE
+	{
+		name = ElectricCharge
+		rate = 0.24
+	}
+}
+
+  RESOURCE
+	{
+		name = ElectricCharge
+		amount = 20
+		maxAmount = 20
+	}
+}
